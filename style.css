@@ -105,6 +105,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
+<<<<<<< HEAD
 button:hover {
     background-color: rgba(0, 0, 0, 0.2);
     /* Fondo transparente al pasar el ratón sobre el botón */
@@ -122,6 +123,15 @@ button:hover {
     /*position: absolute;
  bottom: 0;*/
     /*width: 100%;*/
+=======
+.footer{
+ background-color: #000000;
+ padding: 80px 0;
+ margin-top: 50px;
+ /*position: absolute;
+ bottom: 0;*/
+ /*width: 100%;*/
+>>>>>>> 3d93650c66987ecb3bd56ca48fe3f3e871e8120f
 }
 
 .footer-row {
