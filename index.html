@@ -6,24 +6,61 @@
   <title>ElectricAnalytics</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
- 
-  
+
 </head>
 <body>
-  <h1>Consumo Electrico</h1>
-  <h2>Objetivos</h2>
-  <h3>Construir una aplicacion web que pueda realizar la medicion del consumo electrico de los dispositivos electricos</h3>
-  <h2>Descripcion</h2>
+  <header>
+    <div class ="logo">
+      <img src="logoEA.png" alt="logo del grupo">
+      <h1 class="ElectricAnalytics">ElectricAnalytics</h1>
+    </div>
+    <nav>
+      <a href="" class="nav-link">Accede a nuestra APP</a>
+    </nav>
+
+  </header>
+
+  <h2>ElectricAnalytics es un grupo de estudiantes que buscan tener una inicaitiva 
+      para poder ayudar a resolver necesidades que demanden en la sociedad a travez 
+      de ideas innovadores o creando proyectos que faciliten al usuario a realizar 
+      sus actividades de manera mucho mas sencilla y precisa.
+  </h2>
+  <h5>Nuestro objetivo principal es:</h5>
+  <h3>Desarrollar un software que permita calcular el consumo eléctrico de múltiples 
+      usuarios, haciendo uso de los conocimientos adquiridos en programación orientada
+      a objetos, y aplicando cálculos matemáticos, esto con el fin de concientizar y 
+      alertar a las personas sobre sus hábitos de consumo eléctrico.</h3>
+  <style>
+    #imagenDesplegada {
+      display: none; /* Oculta la imagen por defecto */
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="mostrarImagen()">Visita nuestro diagrama</button>
+  
+  <img id="imagenDesplegada" src="diagramaDeClases.jpg" alt="Imagen Desplegada">
+
+  <script>
+    function mostrarImagen() {
+      var imagen = document.getElementById("imagenDesplegada");
+      imagen.style.display = "block"; /* Cambia la visibilidad de la imagen */
+    }
+  </script>
+
+</body>
   <footer class="footer">
    <div class="container">
        <div class="footer-row">
              <div class="footer-links">
-                 <h4> Compañia</h4>
+                 <h4> Autores</h4>
                  <ul>
-                  <li><a href="#">Nosotros</a></li>
-                  <li><a href="#">YOBAY</a></li>
-                  <li><a href="#">PARDO</a></li>
-                  <li><a href="#">VALES TRES HECTARIAS</a></li>
+                  <li><a href="#">Richard Cajas</a></li>
+                  <li><a href="#">Jorge Morocho</a></li>
+                  <li><a href="#">Wilmer Pardo</a></li>
+                  <li><a href="#">Jasiel Quezada</a></li>
+                  <li><a href="#">Yobay</a></li>
                 </ul>
              </div>
              <div class="footer-links">
