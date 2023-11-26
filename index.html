@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 </head>
+
 <body>
   <header>
-    <div class ="logo">
+    <div class="logo">
       <img src="logoEA.png" alt="logo del grupo">
       <h1 class="ElectricAnalytics">ElectricAnalytics</h1>
     </div>
@@ -20,70 +22,72 @@
 
   </header>
 
-  <h2>ElectricAnalytics es un grupo de estudiantes que buscan tener una inicaitiva 
-      para poder ayudar a resolver necesidades que demanden en la sociedad a travez 
-      de ideas innovadores o creando proyectos que faciliten al usuario a realizar 
-      sus actividades de manera mucho mas sencilla y precisa.
+  <h2>ElectricAnalytics es un grupo de estudiantes que buscan tener una inicaitiva
+    para poder ayudar a resolver necesidades que demanden en la sociedad a travez
+    de ideas innovadores o creando proyectos que faciliten al usuario a realizar
+    sus actividades de manera mucho mas sencilla y precisa.
   </h2>
   <h5>Nuestro objetivo principal es:</h5>
-  <h3>Desarrollar un software que permita calcular el consumo eléctrico de múltiples 
-      usuarios, haciendo uso de los conocimientos adquiridos en programación orientada
-      a objetos, y aplicando cálculos matemáticos, esto con el fin de concientizar y 
-      alertar a las personas sobre sus hábitos de consumo eléctrico.</h3>
+  <h3>Desarrollar un software que permita calcular el consumo eléctrico de múltiples
+    usuarios, haciendo uso de los conocimientos adquiridos en programación orientada
+    a objetos, y aplicando cálculos matemáticos, esto con el fin de concientizar y
+    alertar a las personas sobre sus hábitos de consumo eléctrico.</h3>
   <style>
     #imagenDesplegada {
-      display: none; 
+      display: none;
     }
   </style>
-</head>
-<body>
-  <button onclick="mostrarImagen()">Visita nuestro diagrama</button>
+  </head>
 
-  <img id="imagenDesplegada" src="diagramaDeClases.jpg" alt="Imagen Desplegada" onclick="cerrarImagen()">
-  <script>
-    function mostrarImagen() {
-      var imagen = document.getElementById("imagenDesplegada");
-      if (imagen.style.display === "block") {
-        imagen.style.display = "none";
-      } else {
-        imagen.style.display = "block";
+  <body>
+    <button onclick="mostrarImagen()">Visita nuestro diagrama UML</button>
+
+    <img id="imagenDesplegada" src="diagramaDeClases.jpg" alt="Imagen Desplegada" onclick="cerrarImagen()">
+    <script>
+      function mostrarImagen() {
+        var imagen = document.getElementById("imagenDesplegada");
+        if (imagen.style.display === "block") {
+          imagen.style.display = "none";
+        } else {
+          imagen.style.display = "block";
+        }
       }
-    }
 
-    function cerrarImagen() {
-      var imagen = document.getElementById("imagenDesplegada");
-      imagen.style.display = "none";
-    }
-  </script>
+      function cerrarImagen() {
+        var imagen = document.getElementById("imagenDesplegada");
+        imagen.style.display = "none";
+      }
+    </script>
 
-</body>
+  </body>
   <footer class="footer">
-   <div class="container">
-       <div class="footer-row">
-             <div style= "margin: 0 auto; width: 30%;"class="footer-links">
-                 <h4> Autores</h4>
-                 <ul>
-                  <li><a href="https://github.com/RichardC022">Richard Cajas</a></li>
-                  <li><a href="https://github.com/LighTningTnT">Jorge Morocho</a></li>
-                  <li><a href="https://github.com/WilmerPardo">Wilmer Pardo</a></li>
-                  <li><a href="https://github.com/Jasiel2023">Jasiel Quezada</a></li>
-                </ul>
-             </div>
-            <div style= "margin: 0 auto; width:30%;"class="footer-links">
-              <h4>Repositorio</h4>
-              <div class="social-link">
-               <a href="https://github.com/Jasiel2023/ConsumoElectrico"> <i  class="fab fa-github"></i></a>
-              </div>
+    <div class="container">
+      <div class="footer-row">
+        <div style="margin: 0 auto; width: 30%;" class="footer-links">
+          <h4> Autores</h4>
+          <ul>
+            <li><a href="https://github.com/RichardC022">Richard Cajas</a></li>
+            <li><a href="https://github.com/LighTningTnT">Jorge Morocho</a></li>
+            <li><a href="https://github.com/WilmerPardo">Wilmer Pardo</a></li>
+            <li><a href="https://github.com/Jasiel2023">Jasiel Quezada</a></li>
+          </ul>
+        </div>
+        <div style="margin: 0 auto; width:30%;" class="footer-links">
+          <h4>Repositorio</h4>
+          <div class="social-link">
+            <a href="https://github.com/Jasiel2023/ConsumoElectrico"> <i class="fab fa-github"></i></a>
           </div>
-         <div style= "margin: 0 auto; width:30%;"class="footer-links">
-           <h4> Siguenos</h4>
-           <div class="social-link">
+        </div>
+        <div style="margin: 0 auto; width:30%;" class="footer-links">
+          <h4> Siguenos</h4>
+          <div class="social-link">
             <a href="https://www.facebook.com/profile.php?id=61553713722252"> <i class="fab fa-facebook-f"></i></a>
             <a href="a"> <i class="fab fa-instagram"></i></a>
-           </div>
-       </div>
-   </div>
-   </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
+
 </html>
