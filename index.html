@@ -32,20 +32,27 @@
       alertar a las personas sobre sus hábitos de consumo eléctrico.</h3>
   <style>
     #imagenDesplegada {
-      display: none; /* Oculta la imagen por defecto */
+      display: none; 
     }
   </style>
 </head>
 <body>
-
   <button onclick="mostrarImagen()">Visita nuestro diagrama</button>
-  
-  <img id="imagenDesplegada" src="diagramaDeClases.jpg" alt="Imagen Desplegada">
 
+  <img id="imagenDesplegada" src="diagramaDeClases.jpg" alt="Imagen Desplegada" onclick="cerrarImagen()">
   <script>
     function mostrarImagen() {
       var imagen = document.getElementById("imagenDesplegada");
-      imagen.style.display = "block"; /* Cambia la visibilidad de la imagen */
+      if (imagen.style.display === "block") {
+        imagen.style.display = "none";
+      } else {
+        imagen.style.display = "block";
+      }
+    }
+
+    function cerrarImagen() {
+      var imagen = document.getElementById("imagenDesplegada");
+      imagen.style.display = "none";
     }
   </script>
 
