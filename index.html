@@ -21,37 +21,39 @@
 
   </header>
 
-  <h2>ElectricAnalytics es un grupo de estudiantes que buscan tener una inicaitiva
+  <h2>ElectricAnalytics es un grupo de estudiantes que buscan tener una iniciativa
     para poder ayudar a resolver necesidades que demanden en la sociedad a travez
-    de ideas innovadores o creando proyectos que faciliten al usuario a realizar
-    sus actividades de manera mucho mas sencilla y precisa.
+    de ideas innovadoras o creando proyectos que faciliten al usuario a realizar
+    sus actividades de manera mucho más sencillas y precisas.
   </h2>
   <h5>Nuestro objetivo principal es:</h5>
   <h3>Desarrollar un software que permita calcular el consumo eléctrico de múltiples
     usuarios, haciendo uso de los conocimientos adquiridos en programación orientada
     a objetos, y aplicando cálculos matemáticos, esto con el fin de concientizar y
     alertar a las personas sobre sus hábitos de consumo eléctrico.</h3>
-  <style>
-    #imagenDesplegada {
-      display: none;
-    }
-  </style>
-  </head>
-
-  <body>
-
-    <button onclick="mostrarImagen()">Visita nuestro diagrama</button>
-
-    <img id="imagenDesplegada" src="diagramaDeClases.jpg" alt="Imagen Desplegada">
-
-    <script>
-      function mostrarImagen() {
-        var imagen = document.getElementById("imagenDesplegada");
-        imagen.style.display = "block"; 
-      }
-    </script>
-
-  </body>
+    <head>
+      <style>
+        #imagenDesplegada {
+          display: none;
+          max-width: 100%;
+          height: auto;
+        }
+      </style>
+    </head>
+    <body>
+      <button onclick="toggleImagen()">Visita nuestro diagrama</button>    
+      <img id="imagenDesplegada" src="diagramaDeClases.jpg" alt="Imagen Desplegada">
+      <script>
+        function toggleImagen() {
+          var imagen = document.getElementById("imagenDesplegada");
+          if (imagen.style.display === "block") {
+            imagen.style.display = "none"; 
+          } else {
+            imagen.style.display = "block"; 
+          }
+        }
+      </script>
+    </body>
   <footer class="footer">
     <div class="container">
       <div class="footer-row">

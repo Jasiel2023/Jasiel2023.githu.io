@@ -58,6 +58,16 @@ h1 {
     margin-left: 20px;
 }
 
+@media screen and (max-width: 600px) {
+    /* Ajusta el valor de 600px según tus necesidades */
+    .logo img,
+    h1 {
+        font-size: 1em;
+        height: 70px;
+        margin-left: 10px; /* Ajusta el margen izquierdo para pantallas pequeñas */
+    }
+}
+
 h2 {
     margin: 60px;
     margin-top: 60px;
