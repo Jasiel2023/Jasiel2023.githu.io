@@ -21,7 +21,11 @@
     </nav>
 
   </header>
-
+  <style>
+    h2 {
+        text-align: justify;
+    }
+</style>
   <h2>Este proyecto comenzó como una meta por cumplir y entregar a tiempo, pero conforme fuimos
     avanzando con las clases y aumentando nuestros conocimientos, nos llamó cada vez más la
     atención sobre aquello que podríamos lograr con la culminación del mismo, es increíble lo mucho
@@ -32,33 +36,40 @@
     para lograr conseguirlo.
   </h2>
   <h5>Nuestro objetivo principal es:</h5>
+  <style>
+    h3 {
+        text-align: justify;
+    }
+</style>
   <h3>Desarrollar un software que permita calcular el consumo eléctrico de múltiples
     usuarios, haciendo uso de los conocimientos adquiridos en programación orientada
     a objetos, y aplicando cálculos matemáticos, esto con el fin de concientizar y
     alertar a las personas sobre sus hábitos de consumo eléctrico.</h3>
-    <head>
-      <style>
-        #imagenDesplegada {
-          display: none;
-          max-width: 100%;
-          height: auto;
+
+  <head>
+    <style>
+      #imagenDesplegada {
+        display: none;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="toggleImagen()">Visualizar diagrama de clases</button>
+    <img id="imagenDesplegada" src="diagramaDeClases.jpg" alt="Imagen Desplegada">
+    <script>
+      function toggleImagen() {
+        var imagen = document.getElementById("imagenDesplegada");
+        if (imagen.style.display === "block") {
+          imagen.style.display = "none";
+        } else {
+          imagen.style.display = "block";
         }
-      </style>
-    </head>
-    <body>
-      <button onclick="toggleImagen()">Visualizar diagrama de clases</button>    
-      <img id="imagenDesplegada" src="diagramaDeClases.jpg" alt="Imagen Desplegada">
-      <script>
-        function toggleImagen() {
-          var imagen = document.getElementById("imagenDesplegada");
-          if (imagen.style.display === "block") {
-            imagen.style.display = "none"; 
-          } else {
-            imagen.style.display = "block"; 
-          }
-        }
-      </script>
-    </body>
+      }
+    </script>
+  </body>
   <footer class="footer">
     <div class="container">
       <div class="footer-row">
@@ -80,7 +91,7 @@
         </div>
         <div style="margin: 0 auto; width:0%;" class="footer-links">
           <h4> Siguenos</h4>
-          <div style="margin: 0 auto; width:80%;"class="social-link">
+          <div style="margin: 0 auto; width:80%;" class="social-link">
             <a href="https://www.facebook.com/profile.php?id=61553713722252"> <i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
