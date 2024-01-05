@@ -5,186 +5,99 @@
     list-style: none;
 }
 
-header {
-    display: flex;
-    height: 110px;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    margin-right: 60px;
-    display: inline-block;
-    padding: 15px 20px;
-    border-radius: 10px;
-    background-color: #fefefe;
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #ffffffb0;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 140px;
-    margin-left: 10px;
-}
-
 body {
     background-image: url(fondoDePagina.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     font-family: sans-serif;
+}
 
+header {
+    display: flex;
+    height: 110px;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+nav a {
+    margin-right: 20px; 
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #ffffffb0;
+}
+
+.logo img {
+    height: 70px; 
+    margin-left: 10px;
 }
 
 h1 {
-
-    font-size: 2em;
-    background: linear-gradient(to right, #00aaff, #e82069);
-    -webkit-background-clip: text;
-    color: transparent;
-    padding: 50px;
-    margin-left: 20px;
+    font-size: 1.5em; 
+    padding: 20px;
+    margin: 10px 0;
 }
 
 @media screen and (max-width: 600px) {
-    /* Ajusta el valor de 600px según tus necesidades */
     .logo img,
     h1 {
         font-size: 1em;
-        height: 70px;
-        margin-left: 10px; /* Ajusta el margen izquierdo para pantallas pequeñas */
+        height: 50px;
+        margin-left: 10px;
     }
 }
 
 h2 {
-    margin: 60px;
-    margin-top: 60px;
-    width: 50%;
-    background: linear-gradient(to right, #9900ff, #dd1860);
-    -webkit-background-clip: text;
-    color: transparent;
+    margin: 20px; 
+    width: 80%;
 }
 
 h5 {
-
-    font-size: 2em;
-    color: #FFFFFF;
-    padding: 50px;
+    font-size: 1.5em; 
+    padding: 20px;
     margin-left: 20px;
 }
 
 h3 {
-    margin: 80px;
-    margin-top: 0px;
-    width: 50%;
-    color: #ffffffba;
+    margin: 40px; 
+    width: 80%; 
 }
 
 h6 {
-    font-size: 2em;
-    color: #FFFFFF;
-    padding: 50px;
-    margin-left: 500px;
-    padding-top: 100px;
+    font-size: 1.5em; 
+    margin-left: 20px;
+    padding: 20px;
 }
 
 button {
-    display: flex;
-    margin: 50px;
-    padding: 10px 20px;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    /* Fondo transparente al pasar el ratón sobre el botón */
+    margin: 20px; 
+    padding: 5px 10px; 
+    font-size: 14px; 
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%; 
+    padding: 0 20px; 
 }
 
 .footer {
-    background-color: #000000;
-    padding: 80px 0;
-    margin-top: 50px;
-    /*position: absolute;
- bottom: 0;*/
-    /*width: 100%;*/
-}
-
-.footer-row {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 40px 20px; 
 }
 
 .footer-links {
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-links h4 {
-    font-size: 20px;
-    color: #FFFFFF;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid #00C3FF;
-    padding-bottom: 10px;
-    display: inline-block;
-}
-
-.footer-links ul li a {
-    font-size: 18px;
-    text-decoration: none;
-    color: #BBBBBB;
-    display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
-}
-
-.footer-links ul li a:hover {
-    color: #FFFFFF;
-    padding-left: 6px
+    width: 100%; 
+    margin-bottom: 20px; 
 }
 
 .social-link a {
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #FFFFFF;
-    transition: all .5s ease;
-
+    min-height: 30px; 
+    width: 30px;
+    line-height: 30px;
 }
-
-.social-link a:hover {
-    background-color: #00C3FF;
-}
-
 /*@media(max-width:9991px){
     .footer-row{
         text-align: center;
