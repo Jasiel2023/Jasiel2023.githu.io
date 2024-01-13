@@ -14,9 +14,9 @@ header {
 }
 
 nav a {
-    margin-right: 20px;
-    margin-bottom: 10px;  /* Agrega un margen inferior para separar los enlaces */
-    display: block;       /* Hace que los enlaces ocupen el ancho completo */
+    margin-right: 40px;
+    margin-bottom: 10px;  
+    display: block;      
     padding: 15px 20px;
     border-radius: 10px;
     background-color: #fefefe;
@@ -27,12 +27,11 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
-/* Consulta de medios para dispositivos con un ancho de pantalla máximo de 767px (típicamente smartphones) */
 @media screen and (max-width: 767px) {
     nav a {
-        margin-right: 0;  /* Elimina el margen derecho */
-        margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
-        font-size: 14px; /* Reduce el tamaño de fuente para dispositivos móviles */
+        margin-right: 10px;  
+        margin-bottom: 10px; 
+        font-size: 12px; 
     }
 }
 nav a:hover {
@@ -101,7 +100,25 @@ h3 {
     width: 50%;
     color: #ffffffba;
 }
+@media screen and (max-width: 767px) {
+    h2 {
+        margin: 20px; 
+        width: 80%; 
+    }
 
+    h5 {
+        font-size: 1.5em; /* Reduzco el tamaño de fuente para dispositivos móviles */
+        padding: 20px; /* Reduzco el padding para dispositivos móviles */
+        margin: 10px 0; /* Ajusto el margen */
+        text-align: left; /* Alineo el texto a la izquierda */
+    }
+
+    h3 {
+        margin: 40px 20px; /* Reduzco el margen y ajusto los valores superior e izquierdo */
+        width: 80%; /* Ajusto el ancho para mejorar la legibilidad */
+        color: #ffffffba;
+    }
+}
 h6 {
     font-size: 2em;
     color: #FFFFFF;
@@ -125,7 +142,6 @@ button {
 
 button:hover {
     background-color: rgba(0, 0, 0, 0.2);
-    /* Fondo transparente al pasar el ratón sobre el botón */
 }
 
 .container {
@@ -135,11 +151,8 @@ button:hover {
 
 .footer {
     background-color: #000000;
-    padding: 80px 0;
+    padding: 40px 50px; 
     margin-top: 50px;
-    /*position: absolute;
- bottom: 0;*/
-    /*width: 100%;*/
 }
 
 .footer-row {
@@ -148,14 +161,15 @@ button:hover {
 }
 
 .footer-links {
-    width: 25%;
+    width: 100%; 
     padding: 0 15px;
+    margin-bottom: 20px; 
 }
 
 .footer-links h4 {
-    font-size: 20px;
+    font-size: 18px; 
     color: #FFFFFF;
-    margin-bottom: 25px;
+    margin-bottom: 20px; 
     font-weight: 500;
     border-bottom: 2px solid #00C3FF;
     padding-bottom: 10px;
@@ -163,17 +177,50 @@ button:hover {
 }
 
 .footer-links ul li a {
-    font-size: 18px;
+    font-size: 16px; 
     text-decoration: none;
     color: #BBBBBB;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 10px; 
     transition: all .3s ease;
 }
 
 .footer-links ul li a:hover {
     color: #FFFFFF;
-    padding-left: 6px
+    padding-left: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 1200px;
+        margin-right: 10px;
+    }
+
+    
+    .footer-links {
+        width: 80%; 
+        margin: 2px;
+    }
+
+    .footer-links h4 {
+        font-size: 14px; 
+        margin-bottom: 15px; 
+        margin: 2px;
+    }
+
+    .footer-links ul li a {
+        font-size: 10px; 
+        margin-bottom: 4px; 
+        margin: 2px;
+
+    }
+
+    .footer-links .autores,
+    .footer-links .repositorio,
+    .footer-links .siguenos {
+        margin-bottom: 10px; 
+        margin-left: 2px;
+    }
 }
 
 .social-link a {
@@ -193,14 +240,3 @@ button:hover {
 .social-link a:hover {
     background-color: #00C3FF;
 }
-
-/*@media(max-width:9991px){
-    .footer-row{
-        text-align: center;
-    }
-    
-    .footer-links{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-}*/
