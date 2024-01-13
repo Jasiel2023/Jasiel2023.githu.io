@@ -14,8 +14,9 @@ header {
 }
 
 nav a {
-    margin-right: 60px;
-    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;  /* Agrega un margen inferior para separar los enlaces */
+    display: block;       /* Hace que los enlaces ocupen el ancho completo */
     padding: 15px 20px;
     border-radius: 10px;
     background-color: #fefefe;
@@ -26,6 +27,14 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
+/* Consulta de medios para dispositivos con un ancho de pantalla máximo de 767px (típicamente smartphones) */
+@media screen and (max-width: 767px) {
+    nav a {
+        margin-right: 0;  /* Elimina el margen derecho */
+        margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+        font-size: 14px; /* Reduce el tamaño de fuente para dispositivos móviles */
+    }
+}
 nav a:hover {
     background-color: #ffffffb0;
 }
@@ -60,12 +69,12 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-    /* Ajusta el valor de 600px según tus necesidades */
+
     .logo img,
     h1 {
         font-size: 1em;
         height: 70px;
-        margin-left: 10px; /* Ajusta el margen izquierdo para pantallas pequeñas */
+        margin-left: 10px; 
     }
 }
 
