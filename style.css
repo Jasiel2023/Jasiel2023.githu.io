@@ -107,15 +107,15 @@ h3 {
     }
 
     h5 {
-        font-size: 1.5em; /* Reduzco el tamaño de fuente para dispositivos móviles */
-        padding: 20px; /* Reduzco el padding para dispositivos móviles */
-        margin: 10px 0; /* Ajusto el margen */
-        text-align: left; /* Alineo el texto a la izquierda */
+        font-size: 1.5em; 
+        padding: 20px; 
+        margin: 10px 0; 
+        text-align: left; 
     }
 
     h3 {
-        margin: 40px 20px; /* Reduzco el margen y ajusto los valores superior e izquierdo */
-        width: 80%; /* Ajusto el ancho para mejorar la legibilidad */
+        margin: 40px 20px; 
+        width: 80%; 
         color: #ffffffba;
     }
 }
