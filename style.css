@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 body {
-    background-image: url(fondoPagina.png);
+    background-image: url(fondoPagina.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -58,9 +58,13 @@ body {
 
 }
 
-h1 {
-    height: 100px;
-}
+h1 { 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em; 
+    color:  #fefefe;
+    padding: 50px; 
+    margin-left: 20px; 
+} 
 
 @media screen and (max-width: 600px) {
     .letra  img {
